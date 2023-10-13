@@ -1,22 +1,15 @@
 <template>
   <div>
-    <h2>Recruitment Request</h2>
+    <h2>Financial Request</h2>
     <v-btn @click="newRequest">new recruitment request</v-btn>
     <v-dialog v-model="showDialog" width="600px">
       <v-card>
         <v-card-title>
-          <span class="center">Recruitment Request</span>
+          <span class="center">Financial Request</span>
         </v-card-title>
         <v-card-text>
           <v-container>
             <v-col>
-              <v-row>
-                <div>Contract type</div>
-                <v-radio-group>
-                  <v-radio v-for="(type, index) in contractType" :key="index" :label="type"
-                    :value="type"></v-radio>
-                </v-radio-group>
-              </v-row>
               <v-row>
                 <div>Requesting department</div>
                 <v-radio-group>
@@ -25,19 +18,15 @@
                 </v-radio-group>
               </v-row>
               <v-row>
-                <div>Years of experience</div>
-                <v-select
-                  :items="experience"
-                  single
-                  required
-                ></v-select>
-              </v-row>
-              <v-row>
-                <div>Job title</div>
+                <div>Project reference</div>
                 <v-text-field required clearable></v-text-field>
               </v-row>
               <v-row>
-                <div>Job description</div>
+                <div>Required Amount</div>
+                <v-text-field required clearable></v-text-field>
+              </v-row>
+              <v-row>
+                <div>Reason</div>
                 <v-textarea required clearable></v-textarea>
               </v-row>
             </v-col>

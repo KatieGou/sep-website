@@ -42,9 +42,7 @@ export default {
   data() {
     return {
       showDialog: false,
-      contractType: ['Full Time', 'Part Time'],
       departments: ['Administration',  'Services', 'Production', 'Financial'],
-      experience: ['0', '>0, <=1', '>1, <=3', '>3, <=5', '>5, <=10', '>10'],
     };
   },
   methods: {

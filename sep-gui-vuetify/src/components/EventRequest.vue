@@ -52,15 +52,15 @@
                   </v-card-title>
                   <v-card-text>
                     <v-row>
-                      <v-checkbox v-model="Decorations" label="Decorations"></v-checkbox>
-                      <v-checkbox v-model="Food" label="Breakfast, lunch, dinner"></v-checkbox>
+                      <v-checkbox v-model="preferences.Decorations" label="Decorations"></v-checkbox>
+                      <v-checkbox v-model="preferences.Food" label="Breakfast, lunch, dinner"></v-checkbox>
                     </v-row>
                     <v-row>
-                      <v-checkbox v-model="Parties" label="Parties"></v-checkbox>
-                      <v-checkbox v-model="Drinks" label="Soft/hot drinks"></v-checkbox>
+                      <v-checkbox v-model="preferences.Parties" label="Parties"></v-checkbox>
+                      <v-checkbox v-model="preferences.Drinks" label="Soft/hot drinks"></v-checkbox>
                     </v-row>
                     <v-row>
-                      <v-checkbox v-model="Photos" label="Photos/filming"></v-checkbox>
+                      <v-checkbox v-model="preferences.Photos" label="Photos/filming"></v-checkbox>
                     </v-row>
                   </v-card-text>
                 </v-card>
@@ -88,6 +88,13 @@ export default {
       showEndPicker: false,
       startDate: null,
       endDate: null,
+      preferences: {
+        Decorations: false,
+        Food: false,
+        Parties: false,
+        Drinks: false,
+        Photos: false,
+      },
     };
   },
   methods: {

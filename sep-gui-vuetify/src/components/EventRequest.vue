@@ -119,13 +119,3 @@ export default {
   },
 }
 </script>
-
-<style>
-.frame-card {
-  border: 2px solid #d3e6ec;
-  /* Add a border to create a frame-like appearance */
-  border-radius: 10px;
-  /* Optional: Add rounded corners */
-  padding: 20px;
-}
-</style>

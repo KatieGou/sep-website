@@ -5,7 +5,7 @@
     <v-dialog v-model="showDialog" width="600px">
       <v-card>
         <v-card-title>
-          <span class="center">Financial Request</span>
+          Financial Request
         </v-card-title>
         <v-card-text>
           <v-container>

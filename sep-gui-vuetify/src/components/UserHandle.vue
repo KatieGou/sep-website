@@ -23,15 +23,6 @@
   </div>
 </template>
 
-<style>
-.center {
-  display: flex;
-  justify-content: center;
-  /* align-items: center; */
-  /* height: 100vh; */
-}
-</style>
-
 <script>
 import { postLogin } from '@/api/api';
 export default {
